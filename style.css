@@ -1,0 +1,143 @@
+body {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    background-color: #F1C40F;
+    color: white;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 200px;
+    height: 30px;
+    padding: 0 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+form input:focus {
+    border-bottom: 2px solid #1ABC9C;
+}
+
+form input:hover {
+    box-shadow: 0 0 5px #1ABC9C;
+}
+
+form button {
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    background-color: #1ABC9C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+form button:hover {
+    box-shadow: 0 0 5px #1ABC9C;
+    background-color: #16A085;
+}
+
+#result {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+#result h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#result p {
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+}
+
+#result #imc-value {
+    color: #1ABC9C;
+}
+
+#result #imc-status {
+    color: white;
+}
+
+#result #imc-advice {
+    font-style: italic;
+    color: #ECF0F1;
+}
+
+/* Styles pour le mode sombre */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #34495E;
+    }
+
+    h1 {
+        color: #ECF0F1;
+    }
+
+    form input {
+        border-bottom: 2px solid #ECF0F1;
+    }
+
+    form input:focus {
+        border-bottom: 2px solid #1ABC9C;
+    }
+
+    form button {
+        color: #ECF0F1;
+        background-color: #1ABC9C;
+    }
+
+    form button:hover {
+        background-color: #16A085;
+    }
+
+    #result {
+        background-color: #2C3E50;
+    }
+
+    #result #imc-status {
+        color: #1ABC9C;
+    }
+
+}
+
+/* Classes pour les différents statuts d'IMC */
+.underweight {
+    background-color: #E74C3C;
+}
+
+.normal {
+    background-color: #27AE60;
+}
+
+.overweight {
+    background-color: #F39C12;
+}
+
+.obese {
+    background-color: #8E44AD;
+}

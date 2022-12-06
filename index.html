@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculateur d'IMC</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Calculateur d'IMC</h1>
+<form id="imc-form">
+    <label for="weight">Poids (kg) :</label>
+    <input type="number" name="weight" id="weight" min="0" step="0.1" required>
+    <label for="height">Taille (cm) :</label>
+    <input type="number" name="height" id="height" min="0" step="0.1" required>
+    <button type="submit">Calculer</button>
+</form>
+<div id="result">
+    <h2>Votre IMC : <span id="imc-value"></span></h2>
+    <p id="imc-status"></p>
+    <p id="imc-advice"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
